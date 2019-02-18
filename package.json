@@ -1,10 +1,6 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "airbnb-browser-shims": "^3.1.0",
     "gatsby": "^2.0.119",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-manifest": "^2.0.17",
@@ -16,7 +12,8 @@
     "prop-types": "^15.7.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.3.1"
   },
   "keywords": [
     "gatsby"
@@ -25,15 +22,25 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "lint": "./node_modules/.bin/eslint src/**/*.js*; stylelint \"src/**/*.css\" --di",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  "devDependencies": {
+    "commitizen": "^3.0.5",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.16.4",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
