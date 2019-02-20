@@ -1,8 +1,10 @@
 import React from 'react';
+import Hero from '../components/Hero';
+import './index.module.css';
 
 const IndexPage = () => (
-  <div>
-    <h1>Hello World</h1>
+  <div className="layout">
+    <Hero />
   </div>
 );
 
