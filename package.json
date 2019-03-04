@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "airbnb-browser-shims": "^3.1.0",
+    "bootstrap": "^4.3.1",
     "gatsby": "^2.0.119",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-manifest": "^2.0.17",
@@ -13,7 +14,8 @@
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-helmet": "^5.2.0",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "reactstrap": "^7.1.0"
   },
   "keywords": [
     "gatsby"

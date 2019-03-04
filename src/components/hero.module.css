@@ -1,4 +1,93 @@
 .hero {
-  grid-area: hero;
   height: 100vh;
+  grid-area: hero;
+  background-image: url('../assets/heroimage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas: '. envision .';
+}
+
+.envisionInfo {
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+
+.envisionInfo img {
+  height: 5vh;
+  width: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .envisionInfo {
+    margin: 0;
+  }
+
+  .envisionInfo img {
+    height: 12vh;
+    width: auto;
+  }
+}
+
+.envisionDate {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 992px) {
+  .envisionDate {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.envisionDate h2 {
+  font-size: 1.25rem;
+  margin: 0.25rem 0;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  font-family: Futura, sans-serif;
+}
+
+.envisionApply {
+  text-align: center;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .envisionApply a {
+    font-size: 1.25rem;
+  }
+}
+
+.envisionApply a {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  border: 0.2rem solid rgb(255, 255, 255);
+  border-radius: 2.5rem;
+  text-decoration: none;
+  font-family: Futura, sans-serif;
+  letter-spacing: 0.25rem;
+}
+
+.envisionApply a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.envisionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: envision;
+}
+
+.envisionAbout h1 {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
 }
