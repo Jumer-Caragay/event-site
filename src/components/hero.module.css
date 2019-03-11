@@ -13,6 +13,7 @@
 .envisionInfo {
   padding: 3rem 0;
   margin: 0 auto;
+  text-align: center;
 }
 
 .envisionInfo img {
@@ -46,11 +47,16 @@
 
 .envisionDate h2 {
   font-size: 1.25rem;
-  margin: 0.25rem 0;
   color: rgb(255, 255, 255);
   letter-spacing: 0.15rem;
   text-transform: uppercase;
   font-family: Futura, sans-serif;
+}
+
+@media screen and (min-width: 992px) {
+  .envisionDate h2{
+    padding: 0.5rem 1rem;
+  }
 }
 
 .envisionApply {
