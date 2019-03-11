@@ -1,6 +1,7 @@
 .hero {
   height: 100vh;
   grid-area: hero;
+  background: rgb(28, 19, 26);
   background-image: url('../assets/heroimage.png');
   background-size: cover;
   background-position: center;
@@ -13,7 +14,6 @@
 .envisionInfo {
   padding: 3rem 0;
   margin: 0 auto;
-  text-align: center;
 }
 
 .envisionInfo img {
@@ -29,6 +29,8 @@
   .envisionInfo img {
     height: 12vh;
     width: auto;
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -50,6 +52,7 @@
   color: rgb(255, 255, 255);
   letter-spacing: 0.15rem;
   text-transform: uppercase;
+  margin: 0.5rem 0;
   font-family: Futura, sans-serif;
 }
 
