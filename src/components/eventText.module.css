@@ -1,0 +1,47 @@
+.eventText {
+  grid-area: eventText;
+  background-color: rgb(30, 19, 27);
+  display: grid;
+  grid-template-columns: 4fr 2fr 6fr;
+  grid-template-areas:
+    '. eventHeader .'
+    '. eventParagraph .';
+}
+
+.eventHeader {
+  grid-area: eventHeader;
+  margin: 0;
+  font-family: Futura, sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+}
+
+.eventParagraph {
+  grid-area: eventParagraph;
+  color: rgb(255, 255, 255);
+  font-family: Futura, sans-serif;
+  letter-spacing: 0.02rem;
+  padding-left: 1rem;
+  border-left: 0.5rem solid rgb(131, 102, 124);
+}
+
+@media screen and (min-width: 992px) {
+  .eventText {
+    grid-template-columns: 1fr 6fr 5fr;
+    grid-template-areas:
+      '. eventHeader .'
+      '. eventParagraph .';
+  }
+
+  .eventHeader {
+    font-size: 3.25em;
+    letter-spacing: 0.25rem;
+  }
+
+  .eventParagraph {
+    font-size: 1.25rem;
+    width: 50%;
+  }
+}
