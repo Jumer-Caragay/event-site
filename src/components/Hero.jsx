@@ -15,6 +15,10 @@ const Hero = () => (
         <div className={styles.envisionApply}>
           <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/forms/nXkSYuZVTRZ4WZ9Q2">Apply</a>
         </div>
+        <div className={styles.envisionMentor}>
+          <h2 className={styles.envisionMentorText}>Want to mentor?</h2>
+          <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/forms/VUSIsDVHRMvZDD613">Mentor App</a>
+        </div>
       </div>
     </section>
   </div>
