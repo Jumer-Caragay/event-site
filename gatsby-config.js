@@ -1,5 +1,7 @@
 module.exports = {
-  pathPrefix: '/event-site',
+  siteMetadata: {
+    title: 'Envision Hacks',
+  },
   plugins: [
     'gatsby-plugin-react-helmet',
   ],
