@@ -1,0 +1,33 @@
+.header {
+  grid-area: header;
+  padding-top: 2rem;
+}
+
+.headerContainer {
+  display: inline-block;
+}
+
+.headerText {
+  display: inline-block;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-family: Futura, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .headerText {
+    font-size: 3.5rem;
+  }
+}
+
+.headerUnderline {
+  background: rgb(154, 129, 151);
+  height: 1rem;
+  width: inherit;
+  text-align: left;
+  border-radius: 2rem;
+  margin-top: -1rem;
+}
