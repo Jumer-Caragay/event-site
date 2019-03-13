@@ -1,0 +1,102 @@
+.organizations {
+  grid-area: organizations;
+  background: rgb(30, 19, 27);
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+    '. header .'
+    '. orgContent .';
+}
+
+.orgContent {
+  padding-top: 3rem;
+  grid-area: orgContent;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+
+  /*
+    background: rgb(30, 19, 27) url('../assets/orgBackground.png');
+  */
+
+  background-position: bottom;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  grid-template-areas:
+    '. sloImage .'
+    '. sloText .'
+    '. wishImage .'
+    '. wishText .';
+}
+
+.sloImage {
+  grid-area: sloImage;
+  margin: 0 auto;
+}
+
+.sloImage img {
+  height: 15vh;
+  width: auto;
+}
+
+.sloText {
+  grid-area: sloText;
+}
+
+.wishImage {
+  grid-area: wishImage;
+  margin: 0 auto;
+}
+
+.wishImage img {
+  height: 15vh;
+  width: auto;
+}
+
+.wishText {
+  grid-area: wishText;
+}
+
+.orgText {
+  color: rgb(255, 255, 255);
+  font-family: Futura, sans-serif;
+  letter-spacing: 0.05rem;
+}
+
+@media screen and (min-width: 992px) {
+  .orgText {
+    font-size: 1.5rem;
+  }
+
+  .sloText {
+    display: flex;
+    align-self: center;
+  }
+
+  .wishText {
+    display: flex;
+    align-self: center;
+  }
+
+  .sloImage {
+    padding: 1rem 0;
+  }
+
+  .sloImage img {
+    height: 20vh;
+  }
+
+  .wishImage {
+    padding: 1rem 0;
+  }
+
+  .wishImage img {
+    height: 20vh;
+  }
+
+  .orgContent {
+    grid-template-columns: 5fr 5fr 2fr;
+    grid-template-areas:
+      'sloImage sloText .'
+      'wishImage wishText .';
+  }
+}
