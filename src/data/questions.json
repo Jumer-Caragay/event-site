@@ -1,0 +1,47 @@
+{
+  "body":
+  [
+    {
+      "questions": 
+      [
+        {
+          "title": "What is a hackathon?",
+          "answer": "A hackathon is an event where you can build out your ideas, network, and show off your skills. This event consists of forming teams, choosing an idea, building it out, and showing it off at the end. Students, sponsors, mentors, and judges gather together to push the limits of what you can build, only limited by your imagination."
+        },
+        {
+          "title": "Who can participate?",
+          "answer": "Students in 9th - 12th grade! This event is open to coders, designers, artists, program managers, and anyone ele who wants to create! No prior coding or technical experience is necessary, and everyone is welcome to participate!"
+        },
+        {
+          "title": "How many people can be in a team?",
+          "answer": "Each team can have a maximum of 4 students."
+        },
+        {
+          "title": "How much does it cost to attend?",
+          "answer": "There is no cost!"
+        }
+      ]
+    },
+    {
+      "questions":
+      [
+        {
+          "title": "What can I build?",
+          "answer": "If you can think it, you can build it. We encourage students to build technological projects. Whether they be software or hardware."
+        },
+        {
+          "title": "What if I don't have a team or idea?",
+          "answer": "Not a problem. There will be mentors to help you brainstorm and we will help you find a team at the beginning of the hackathon!"
+        },
+        {
+          "title": "Im not a high school student. How can I get involved?",
+          "answer": "Stupendous! We would love to have you as a mentor, sponsor, or judge. Send us an email at team@envisionhacks.com or apply to be a mentor."
+        },
+        {
+          "title": "Still have questions?",
+          "answer": "Feel free to shoot us an email at team@envisionhacks.com!"
+        }
+      ]
+    }
+  ]
+}
