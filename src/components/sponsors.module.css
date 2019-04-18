@@ -1,0 +1,81 @@
+.sponsors {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+    '. header .'
+    '. sponsorLayout .';
+  padding: 2rem 0;
+  grid-area: sponsors;
+  background-color: #603C55;
+}
+
+.sponsorsLayout {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 3rem 0;
+  background-color: #FFF;
+  border-radius: 1rem;
+  grid-area: sponsorLayout;
+  display: grid;
+  grid-row-gap: 2rem;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+    '. sprague .'
+    '. secondRow .';
+}
+
+.secondRow {
+  display: flex;
+  flex-direction: column;
+  grid-area: secondRow;
+}
+
+.sprague {
+  grid-area: sprague;
+}
+
+.workday {
+  grid-area: workday;
+  padding: 1.5rem;
+}
+
+.northrop {
+  grid-area: northrop;
+}
+
+.sprague h1 {
+  font-size: 2rem;
+  color: rgb(38, 38, 38);
+  letter-spacing: 0.1rem;
+  font-family: Futura, sans-serif;
+  text-align: center;
+}
+
+.workday img {
+  height: 11vh;
+  width: auto;
+}
+
+.northrop img {
+  height: 18vh;
+  width: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .secondRow {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .sprague h1 {
+    font-size: 3rem;
+  }
+
+  .workday img {
+    height: 15vh;
+  }
+
+  .northrop img {
+    height: 22vh;
+  }
+}
