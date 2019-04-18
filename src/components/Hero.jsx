@@ -12,13 +12,6 @@ const Hero = () => (
           <h2>Cal Poly SLO</h2>
           <h2>San Luis Obispo, CA</h2>
         </div>
-        <div className={styles.envisionApply}>
-          <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/forms/nXkSYuZVTRZ4WZ9Q2">Apply</a>
-        </div>
-        <div className={styles.envisionMentor}>
-          <h2 className={styles.envisionMentorText}>Want to mentor?</h2>
-          <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/forms/IbjeGpf3x6wOGmes2">Mentor App</a>
-        </div>
       </div>
     </section>
   </div>
